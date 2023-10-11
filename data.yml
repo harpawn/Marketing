@@ -1481,5 +1481,12 @@ stepTypes:
             {% endif %}
     name: Persistent Stage
     version: 1
-subgraphs: {}
+subgraphs:
+  Subgraph-3:
+    id: "3"
+    name: New Subgraph
+    steps:
+      - 300ca55e-83a3-40f2-992a-d4c710fd1fdf
+      - 97f9f964-cce9-403f-b095-0c2bf975e852
+      - fbcd23e8-fcd6-4b76-b649-92017ffc703a
 version: 2

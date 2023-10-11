@@ -86,6 +86,27 @@ steps:
                   - columnCounter: e00914f6-a2e7-4a92-8aac-07710f8b93d5
                     stepCounter: d7ba409c-1cca-4bd9-aab2-71e63ad63479
                 transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 157b3000-aa65-4868-9208-f5932a351cc4
+              stepCounter: f7b06c62-75a3-49be-91cc-b61a369f7c4f
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: QTY_CHECK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: case when PS_AVAILQTY> 100 THEN 'HIGH' ELSE 'LESS' END
+            systemColumnType: None
+            transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
